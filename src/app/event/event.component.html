@@ -1,0 +1,14 @@
+
+
+<div class="event">
+
+  <!--<span class="subscribe" (click)="sub(usedevent.event_id)"> 👍  </span>-->
+  <span class="subscribe" ngClass="inscription.state" (click)="sub(usedevent.event_id)"> 👍  </span>
+  <span class="unsubscribe" (click)="unsub(usedevent.event_id)"> 👎 </span>
+  <h3> {{usedevent.event_title}} </h3>
+  <p> {{usedevent.description}} </p>
+  <p> {{usedevent.address}} </p>
+  <p> <i>{{usedevent.date | date:'dd/MM/yyyy'}} </i></p>
+  <p> {{usedevent.category}} </p>
+
+</div>

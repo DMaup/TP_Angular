@@ -1,0 +1,22 @@
+<h4> Utilisateur connecté : {{this.$current_username}}</h4>
+<div class="container">
+
+    <app-event *ngFor="let event of events"
+
+               [usedevent]="event"
+
+    ></app-event>
+
+
+</div>
+
+<!--<div class="link-container">
+
+  <app-event *ngFor="let event of events"
+
+             [usedevent]="event"
+
+  ></app-event>
+
+
+</div>-->

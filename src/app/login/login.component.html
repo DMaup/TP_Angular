@@ -1,0 +1,17 @@
+<h2> Login</h2>
+<p> Se logger avec "toto" et "totopass"</p>
+<div class="form">
+  <form (submit)="login($event)">
+
+      <label>
+        <span> Utilisateur </span>
+        <input name ="username" id="username" type="text" (blur)="checkUsername()" [(ngModel)]="username"/>
+      </label>
+      <label>
+        <span> Mot de passe </span>
+        <input name="password" id="password" type="text" [(ngModel)]="password"/>
+      </label>
+
+      <input type="submit" value="login">
+  </form>
+</div>
